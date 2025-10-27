@@ -1,0 +1,49 @@
+    
+    Tridactyl Top Tips & New Tab Page: "view-source:moz-extension://d76fcf58-b880-47b0-af5b-a751396db006/static/newtab.html"
+    
+    /*
+    THE FOLLOWING FOR INSERTING STUFF CODE
+    let names = [wer,ewrq,qwer,tre,ytru,uyt]
+    let links = ["///D:/Applications/Liberwolf/new%20tab/main.html","///D:/Applications/Liberwolf/new%20tab/main.html","https://alehsaanacademy.org/timetable/","https://alehsaanacademy.org/timetable/","https://alehsaanacademy.org/timetable/"]
+
+    function Add(){
+        document.getElementById("datetime").
+        names.Add(document.getElementById("linkname").value)
+        links.Add(document.getElementById("link").value)
+    }
+    function itsthere(){
+        for(let i = 0; i < names.length; i++){
+            const smt = document.createElement("a")
+            const smtdad = document.getElementById("short")
+            smtdad.innerHTML = smtdad.innerHTML + '<br>href=${names[i]}> ${links[i]} </a>'
+
+        }
+    }
+        
+THE FOLLOWING IS FOR LOAFDING JOKES FROM XTXT FILE
+    FOR LOADING jokes.txt
+       window.onload = loadjoke()
+       function loadjoke(){
+        fetch('./jokes.txt')  // Fetch the .txt file
+        .then(response => response.text())  // Read the response as text
+        .then(text => {
+        // Split the text into lines
+        const lines = text.split('\n');
+        let i = Math.floor(Math.random() * lines.length)
+        document.getElementById("randsentence") = lines[i];
+        })
+        .catch(error => console.error('Error fetching text file:', error));  // Handle errors
+       }
+*/
+
+FOLLOWING FOR INSERTING STUFF IN GUI
+
+<!--
+    <div>
+        Add Shortcut
+        <br>
+        <textarea id = "linkname"></textarea>
+        <textarea id = "link"></textarea>
+        <button onclick = "Add">Add</button>
+    </div>
+ -->

@@ -1,0 +1,227 @@
+<body >
+    <h1 id="datetime">Once upon a time th</h1>
+	 
+    <div id ="short">
+        <a  href="https://alehsaanacademy.org/timetable/"> Al-Ehsaan Salah Timetable </a>
+        <br>
+        <a  href="https://www.youtube.com/"> Youtube </a>
+        <br>
+        <a  href="https://discord.com/channels/@me"> Discord </a>
+        <br>
+        <a  href="Tridactyl Top Tips & New Tab Page.htm"> Tridactyl Homepage </a>
+        <br>
+        <a  href="https://alehsaanacademy.org/timetable/"> Al-Ehsaan Salah Timetable </a>
+    </div>
+    <p id = randsentence></p>
+
+    <br>
+    <br id="thegap">
+    
+    <div>
+        
+</body>
+
+<style>
+    a{color: white}
+    a:visited{color: white}
+    #thegap{margin: 30%;}
+    div{
+        color: #fff;
+        border: 10px;
+    }
+    #datetime{
+        color: #fff
+    }
+    #short {
+        float: right;
+    }
+    p {
+        text-shadow: 10px black;
+        color: #fff;
+
+    }
+    
+    body{
+        font-family: monospace;
+        font-size: large;
+        background-color: #010e2b;
+        background-image: url("walpaper.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        color: #fff;
+    }
+</style>
+
+<script>
+    //#region jokes
+    let jokes = [
+  "The calendar’s days were numbered, so it retired.",
+  "A chicken crossed the road and became a legend.",
+  "A clock’s job is ticking, but it still feels useless.",
+  "The math book was sad - it had too many problems.",
+  "The vacuum cleaner quit - it sucked at its job.",
+  "A sandwich fell apart - it just couldn’t hold it in.",
+  "A scarecrow won an award - it was outstanding.",
+  "A tomato turned red - it saw the salad dressing.",
+  "A cat joined social media - it wanted more pawsitivity.",
+  "A computer caught a cold - it left its Windows open.",
+  "A ghost became a stand-up - it had great boo-humor.",
+  "The baker quit - he couldn't make enough dough.",
+  "A dog sat on sandpaper - it was a rough experience.",
+  "A bed went to therapy - it had too many dreams.",
+  "A skeleton didn’t fight - it had no guts at all.",
+  "A banana slipped - it just couldn't peel with life.",
+  "The belt got arrested - it was holding up pants.",
+  "A tree broke up - it needed more personal space.",
+  "The light bulb was dim - it wasn’t too bright.",
+  "A chair fell over - it couldn’t handle the pressure.",
+  "The pencil felt sharp - it was on point all day.",
+  "The shovel dug deep - it was a groundbreaking tool.",
+  "The mirror cracked - it couldn’t reflect on itself.",
+  "The ladder climbed high - it was a step above the rest.",
+  "The ice cream melted - it couldn’t keep its cool.",
+  "The elevator broke down - it had too many ups and downs.",
+  "The broom swept the competition - it was a clean winner.",
+  "The cactus got lonely - it was too prickly to approach.",
+  "The cookie crumbled - it couldn’t handle the pressure.",
+  "The balloon popped - it couldn’t keep itself together.",
+  "The hammer nailed it - it was a smashing success.",
+  "The kite flew away - it wanted to soar to new heights.",
+  "The pillow went flat - it couldn’t hold its fluff together.",
+  "The teapot whistled - it was steaming with excitement.",
+  "The umbrella folded - it couldn’t weather the storm.",
+  "The zipper got stuck - it was under too much pressure.",
+  "The candle burned out - it couldn’t handle the heat.",
+  "The guitar string snapped - it couldn’t stay in tune.",
+  "The mailbox was full - it couldn’t handle the letters.",
+  "The snowman melted - it couldn’t keep its cool.",
+  "The stapler jammed - it was under too much pressure.",
+  "The clock stopped ticking - it ran out of time.",
+  "The book closed - it needed a break from the drama.",
+  "The ruler measured up - it was a straight shooter.",
+  "The glue stuck around - it was a bonding experience.",
+  "The scissors split - they couldn’t cut it anymore.",
+  "The eraser rubbed out - it couldn’t handle the mistakes.",
+  "The magnet attracted attention - it was polarizing.",
+  "The sock got lost - it couldn’t find its sole mate.",
+  "The door slammed shut - it needed some space.",
+  "The chef burned the soup - he was too busy stirring up drama.",
+  "The barber gave a bad haircut - he was cutting corners.",
+  "The gardener planted weeds - he thought they were “wildflowers.”",
+  "The librarian organized a book fight - she wanted to spice things up.",
+  "The plumber fixed the sink but flooded the bathroom - he was all pipes, no plan.",
+  "The astronaut tried to moonwalk on the moon - he failed spectacularly.",
+  "The detective solved the case but lost his keys - he couldn’t find himself.",
+  "The baker made a cake that looked like a pancake - he couldn’t rise to the occasion.",
+  "The comedian told a joke so bad the audience booed - he bombed harder than a fireworks factory.",
+  "The pilot landed the plane sideways - he said it was a “creative approach.”",
+  "The teacher gave everyone an A+ - she was tired of grading harshly.",
+  "The mechanic fixed the car but broke the radio - he said it was “silent mode.”",
+  "The scientist invented a time machine but got stuck in traffic - he couldn’t escape the present.",
+  "The musician played a concert in the wrong key - he said it was “experimental jazz.”",
+  "The farmer grew square watermelons - he wanted to think outside the box.",
+  "The doctor prescribed laughter as medicine - he said it was the best cure.",
+  "The firefighter rescued a cat but got stuck in the tree - he needed rescuing himself.",
+  "The accountant balanced the books but forgot his own budget - he was broke.",
+  "The magician made his assistant disappear - he forgot the reappearing spell.",
+  "The tailor sewed his own pants too tight - he couldn’t sit down for a week.",
+  "The fisherman caught a boot - he said it was a “shoe-fish.”",
+  "The carpenter built a crooked table - he called it “abstract art.”",
+  "The painter painted the walls neon green - he said it was “modern chic.”",
+  "The photographer took blurry photos - he said they were “impressionist masterpieces.”",
+  "The lifeguard saved a rubber duck - he thought it was drowning.",
+  "The actor forgot his lines - he improvised by yelling “pineapple!”",
+  "The cashier gave everyone free groceries - she said it was “customer appreciation day.”",
+  "The delivery driver delivered a package to the wrong house - he said it was a “surprise gift.”",
+  "The janitor mopped the floor with glitter - he said it was “sparkle cleaning.”",
+  "The architect designed a house with no doors - he called it “minimalist living.”",
+  "The electrician wired the lights to flash like a disco - he said it was “party mode.”",
+  "The journalist wrote a story about himself - he called it “breaking news.”",
+  "The florist arranged flowers into a smiley face - she said it was “botanical happiness.”",
+  "The butcher made heart-shaped steaks - he said it was “meat love.”",
+  "The zookeeper taught the monkeys to juggle - he said it was “enrichment activities.”",
+  "The lawyer argued with a mirror - he said it was “practice.”",
+  "The waiter spilled soup on a customer - he said it was “complimentary seasoning.”",
+  "The engineer built a bridge that wobbled - he called it “interactive architecture.”",
+  "The dentist gave everyone lollipops - he said it was “marketing.”",
+  "The hairdresser gave everyone mullets - she said it was “retro chic.”",
+  "The coach made the team run backward - he said it was “reverse training.”",
+  "The sailor tied knots in his own shoelaces - he said it was “practice for the high seas.”",
+  "The programmer coded a game that crashed - he called it “artistic expression.”",
+  "The vet gave the dog a cat toy - he said it was “cross-species enrichment.”",
+  "The pilot flew the plane in circles - he said it was “scenic routing.”",
+  "The chef made a pizza with no cheese - he called it “deconstructed cuisine.”",
+  "The actor played the role of a tree - he said it was “method acting.”",
+  "The teacher taught math using candy - she said it was “sweet learning.”",
+  "The gardener planted flowers upside down - he said it was “reverse botany.”",
+  "The comedian told a knock-knock joke with no punchline - he said it was “anti-humor.”",
+  "The cheetah tried to run a marathon - it was fast but ran out of stamina.",
+  "The sloth hosted a party - it lasted three days, and no one noticed.",
+  "The octopus tried knitting - it ended up with eight scarves at once.",
+  "The kangaroo joined a boxing match - it won by a hop, skip, and punch.",
+  "The flamingo stood on one leg so long it forgot how to switch.",
+  "The peacock showed off its feathers - it blinded everyone in the room.",
+  "The porcupine tried to hug its friends - it didn’t go well.",
+  "The chameleon played hide-and-seek - it won every time.",
+  "The giraffe tried limbo - it failed miserably.",
+  "The platypus tried to explain itself - no one believed it was real.",
+  "The elephant tried to hide - it stood behind a lamppost.",
+  "The zebra wore polka dots - it wanted to stand out.",
+  "The penguin tried to fly - it ended up belly-flopping into the ocean.",
+  "The owl stayed up all night - it forgot it was nocturnal.",
+  "The beaver built a dam in the bathtub - it flooded the house.",
+  "The raccoon raided the fridge - it left with a full trash bag.",
+  "The armadillo rolled into a ball - it got mistaken for a soccer ball.",
+  "The parrot repeated everything - it even copied the microwave beep.",
+  "The koala slept through its alarm - it missed eucalyptus breakfast.",
+  "The dolphin tried to walk on land - it flopped back into the water.",
+  "The camel stored water in its hump - it forgot where it put the straw.",
+  "The squirrel buried nuts everywhere - it couldn’t find them later.",
+  "The bat hung upside down - it got dizzy and fell.",
+  "The pufferfish inflated itself - it scared away its friends.",
+  "The wolf howled at the moon - it woke up the whole forest.",
+  "The turtle raced a snail - it was a tie.",
+  "The frog tried to catch flies - it ended up with a tongue cramp.",
+  "The crab walked sideways - it bumped into everything.",
+  "The jellyfish floated aimlessly - it got lost in the current.",
+  "The lion roared so loud - it scared itself.",
+  "The hippo tried to dance - it made waves in the pool.",
+  "The meerkat stood guard - it fell asleep on duty.",
+  "The ant carried a crumb - it was the size of a boulder.",
+  "The butterfly fluttered by - it forgot where it was going.",
+  "The rhino charged at a mirror - it thought it was another rhino.",
+  "The gorilla beat its chest - it accidentally knocked itself over.",
+  "The shark tried to smile - it scared all the fish away.",
+  "The snail tried to speed up - it took a nap halfway.",
+  "The peacock tried to dance - it tripped over its own feathers.",
+  "The cat tried to catch a laser pointer - it ended up chasing its tail.",
+  "The dog buried a bone - it forgot where it dug the hole.",
+  "The horse tried to gallop in place - it looked like it was dancing.",
+  "The cow tried to jump over the moon - it got stuck in the haystack.",
+  "The pig rolled in the mud - it thought it was a spa day.",
+  "The duck quacked so much - it lost its voice.",
+  "The rooster crowed at noon - it was confused about the time.",
+  "The sheep tried to count itself - it fell asleep halfway.",
+  "The goat climbed a tree - it couldn’t figure out how to get down.",
+  "The rabbit hopped into a carrot patch - it ate so much it couldn’t move.",
+  "The goldfish swam in circles - it thought it was making progress."
+  //#endregion
+];
+
+        window.onload = loadjoke()
+       function loadjoke(){
+        let i = Math.floor(Math.random() * jokes.length)
+        console.log(i)
+        document.getElementById("randsentence").innerHTML = jokes[i];
+
+       }
+
+
+    var loop = setInterval(loop, 1000)
+    function loop()
+    {
+        var now = new Date();
+        var datetime = now.toLocaleString();
+        document.getElementById("datetime").innerHTML = datetime;
+    }
+  </script>
